@@ -1,0 +1,10 @@
+.selectBox {
+	color: #00f078;
+	border: 4px solid #00f078;
+	border-radius: 20px;
+	padding: 10px 20px;
+}
+
+.selectBox span {
+	font-size: 1.2em;
+}
