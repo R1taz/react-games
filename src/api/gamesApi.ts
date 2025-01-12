@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { BASE_URL } from '../constants/constants'
 import { RequestGetGames, ResponseGetGames } from '../interfaces/interfaceGames'
 
-const apiKey = import.meta.env.VITE_API_KEY
+const apiKey = import.meta.env.VITE_GAMES_API_KEY
 
 const gamesApi = createApi({
 	reducerPath: 'gamesApi',

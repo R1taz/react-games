@@ -7,7 +7,7 @@ export interface IGame {
 	background_image: string
 	rating: number
 	rating_top: number
-	ratings: object
+	ratings: object[]
 	ratings_count: number
 	reviews_text_count: string
 	added: number
