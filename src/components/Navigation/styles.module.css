@@ -1,0 +1,10 @@
+.nav a {
+	color: #a4a4a4;
+	margin: 30px 25px;
+	font-size: 1.3em;
+}
+
+.nav a.active {
+	color: #00f078;
+	font-weight: bold;
+}

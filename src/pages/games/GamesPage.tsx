@@ -3,6 +3,9 @@ import { useGetGamesQuery } from '../../api/gamesApi'
 import { useAppSelector, useAppDispatch } from '../../hooks/react-redux'
 import { setGames } from '../../store/slice/gamesSlice'
 import GamesList from '../../components/Games/GamesList'
+import Categories from '../../components/Categories/Categories'
+import styles from './styles.module.css'
+import Search from '../../components/Search/Search'
 
 const GamesPage = () => {
 	const games = useAppSelector(state => state.gamesSlice.games)
@@ -22,11 +25,15 @@ const GamesPage = () => {
 	}, [data])
 
 	return (
-		<div>
+		<main className={styles.main}>
+			<div className={`${styles.blockSearch} container`}>
+				<Categories />
+				<Search />
+			</div>
 			{isLoading && <h1>Loading...</h1>}
 			{error && <h1>Error!!!</h1>}
 			{games.length !== 0 ? <GamesList games={games} page={page} /> : null}
-		</div>
+		</main>
 	)
 }
 
