@@ -5,12 +5,18 @@ interface State {
 	games: IGame[]
 	page: number
 	page_size: number
+	total_count: number
+	portion_size: number
+	keywords: string
 }
 
 const initialState: State = {
 	games: [],
 	page: 1,
 	page_size: 10,
+	total_count: 0,
+	portion_size: 5,
+	keywords: '',
 }
 
 const gamesSlice = createSlice({
@@ -23,8 +29,17 @@ const gamesSlice = createSlice({
 		setPage(state, action) {
 			state.page = action.payload
 		},
+		setTotalCount(state, action) {
+			state.total_count = action.payload
+		},
+		setKeywords(state, action) {
+			state.page = 1
+			state.total_count = 0
+			state.keywords = action.payload
+		},
 	}),
 })
 
 export default gamesSlice.reducer
-export const { setGames, setPage } = gamesSlice.actions
+export const { setGames, setPage, setTotalCount, setKeywords } =
+	gamesSlice.actions
