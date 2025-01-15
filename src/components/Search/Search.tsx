@@ -19,7 +19,10 @@ const Search = ({ onSubmit }: Props) => {
 			/>
 			<button
 				onClick={() => {
-					if (value === '') return
+					if (value.trim().length === 0) {
+						setValue('')
+						return
+					}
 					onSubmit(value)
 					setValue('')
 				}}

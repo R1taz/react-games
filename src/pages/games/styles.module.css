@@ -12,8 +12,6 @@
 
 .main .paginator {
 	display: flex;
-	padding: 0px 10px;
-	justify-content: end;
 }
 
 .main .paginator button {
@@ -27,6 +25,18 @@
 
 .main .paginator button.active {
 	color: #00f078;
+}
+
+.main .showAll {
+	color: #a4a4a4;
+	cursor: pointer;
+}
+
+.main .nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 10px;
 }
 
 .main .notFound {
