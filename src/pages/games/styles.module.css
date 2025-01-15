@@ -3,5 +3,50 @@
 }
 
 .main .blockSearch div {
-	margin: 0px 15px;
+	margin: 0px;
+}
+
+.main .blockSearch div {
+	margin: 0px 15px 25px;
+}
+
+.main .paginator {
+	display: flex;
+	padding: 0px 10px;
+	justify-content: end;
+}
+
+.main .paginator button {
+	border: none;
+	font-size: 1.1em;
+	margin: 5px;
+	color: #a4a4a4;
+	background-color: white;
+	cursor: pointer;
+}
+
+.main .paginator button.active {
+	color: #00f078;
+}
+
+.main .notFound {
+	color: white;
+	background-color: #a4a4a4;
+	padding: 10px;
+	border-radius: 30px;
+	flex-direction: column;
+}
+
+.main .notFound h1 {
+	margin-top: 50px;
+}
+
+.main .notFound h1::after {
+	content: ' =(';
+}
+
+.main .notFound span {
+	font-size: 1.3em;
+	margin-bottom: 30px;
+	cursor: pointer;
 }
