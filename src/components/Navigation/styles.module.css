@@ -2,6 +2,7 @@
 	color: #a4a4a4;
 	margin: 30px 25px;
 	font-size: 1.3em;
+	cursor: pointer;
 }
 
 .nav a.active {
