@@ -10,7 +10,7 @@
 
 	margin: 95px auto;
 	padding: 20px 30px;
-	width: 40%;
+	width: 60%;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -27,7 +27,7 @@
 
 .filters h2 {
 	align-self: start;
-	margin: 10px 0px;
+	margin: 10px 10%;
 	font-weight: 500;
 	color: #00f078;
 }
