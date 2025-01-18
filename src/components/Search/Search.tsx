@@ -9,7 +9,7 @@ const Search = ({ onSubmit }: Props) => {
 	const [value, setValue] = useState('')
 
 	return (
-		<div>
+		<>
 			<input
 				type='text'
 				className={styles.search}
@@ -30,7 +30,7 @@ const Search = ({ onSubmit }: Props) => {
 			>
 				Send
 			</button>
-		</div>
+		</>
 	)
 }
 

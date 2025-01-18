@@ -10,7 +10,7 @@ const gamesApi = createApi({
 	endpoints: builder => ({
 		getGames: builder.query<ResponseGetGames, RequestGetGames>({
 			query: ({ page, page_size, keywords }) => ({
-				url: '',
+				url: '/games',
 				params: {
 					key: apiKey,
 					page: page,
