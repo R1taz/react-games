@@ -1,0 +1,26 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 10px 5px;
+	position: relative;
+}
+
+.paginator button {
+	border: none;
+	font-size: 1.1em;
+	margin: 5px;
+	color: #a4a4a4;
+	background-color: white;
+	cursor: pointer;
+}
+
+.paginator button.active {
+	color: #00f078;
+}
+
+.showAll {
+	color: #a4a4a4;
+	cursor: pointer;
+	margin: 5px;
+}

@@ -1,0 +1,17 @@
+.filterItem {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 3px 20px;
+	border-radius: 30px;
+	color: white;
+	background-color: #a4a4a4;
+}
+
+.filterItem.active {
+	background-color: #00f078;
+}
+
+.filterItem span {
+	font-size: 1.2em;
+	line-height: 0%;
+}

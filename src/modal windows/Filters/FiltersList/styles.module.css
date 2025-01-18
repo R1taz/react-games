@@ -1,0 +1,53 @@
+.filtersList {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	position: relative;
+	overflow: hidden;
+}
+
+.filtersList > div {
+	width: 100%;
+	overflow: hidden;
+}
+
+/* .filtersList ul li:first-child div {
+	margin-left: 0px;
+}
+
+.filtersList ul li:last-child div {
+	margin-right: 0px;
+} */
+
+.filtersList ul {
+	width: 100%;
+	display: flex;
+	padding: 0px;
+	margin: 10px 0px;
+}
+
+.filtersList li {
+	list-style: none;
+}
+
+.filtersList button {
+	z-index: 1000;
+	cursor: pointer;
+	display: flex;
+	border: none;
+	padding: 5px;
+	background-color: white;
+}
+
+.filtersList button img {
+	width: 20px;
+}
+
+.filtersList .leftButton {
+	left: 0;
+}
+
+.filtersList .rightButton {
+	right: 0;
+}

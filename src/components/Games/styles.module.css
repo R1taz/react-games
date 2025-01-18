@@ -1,3 +1,7 @@
+.gameList > div:first-child {
+	margin-top: 0px;
+}
+
 .gameItem {
 	background-color: #00f078;
 	border-radius: 30px;

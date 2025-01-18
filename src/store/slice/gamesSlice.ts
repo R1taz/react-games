@@ -32,7 +32,7 @@ const gamesSlice = createSlice({
 		setTotalCount(state, action) {
 			state.total_count = action.payload
 		},
-		setKeywords(state, action) {
+		setGameKeywords(state, action) {
 			state.page = 1
 			state.total_count = 0
 			state.keywords = action.payload
@@ -41,5 +41,5 @@ const gamesSlice = createSlice({
 })
 
 export default gamesSlice.reducer
-export const { setGames, setPage, setTotalCount, setKeywords } =
+export const { setGames, setPage, setTotalCount, setGameKeywords } =
 	gamesSlice.actions

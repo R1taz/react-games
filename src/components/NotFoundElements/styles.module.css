@@ -1,0 +1,21 @@
+.notFound {
+	color: white;
+	background-color: #a4a4a4;
+	padding: 10px;
+	border-radius: 30px;
+	flex-direction: column;
+}
+
+.notFound h1 {
+	margin-top: 50px;
+}
+
+.notFound h1::after {
+	content: ' =(';
+}
+
+.notFound span {
+	font-size: 1.3em;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
