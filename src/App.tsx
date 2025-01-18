@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout/Layout'
-import GamesPage from './pages/Games/GamesPage'
+import GamesPage from './pages/games/GamesPage'
 
 function App() {
 	return (
