@@ -1,3 +1,4 @@
+import Filters from '../../modal windows/Filters/Filters'
 import styles from './styles.module.css'
 import { useState } from 'react'
 
@@ -10,7 +11,7 @@ const Categories = () => {
 				<span onClick={() => setOpen(prev => !prev)}>Categories</span>
 			</div>
 
-			<div style={{ display: open ? 'block' : 'none' }}>Categories Select</div>
+			{open && <Filters />}
 		</>
 	)
 }

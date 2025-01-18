@@ -1,5 +1,6 @@
 import { IGame } from '../../interfaces/interfaceGames'
 import GamesItem from './GamesItem'
+import styles from './styles.module.css'
 
 interface Props {
 	games: IGame[]
@@ -7,13 +8,11 @@ interface Props {
 
 const GamesList = ({ games }: Props) => {
 	return (
-		<>
-			<div>
-				{games.map(game => (
-					<GamesItem key={game.id} game={game} />
-				))}
-			</div>
-		</>
+		<div className={styles.gameList}>
+			{games.map(game => (
+				<GamesItem key={game.id} game={game} />
+			))}
+		</div>
 	)
 }
 
